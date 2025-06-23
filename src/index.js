@@ -1,16 +1,16 @@
-const baseUrl = "http://localhost:3000";
-
+//creates function for displaying posts
 function displayPosts() {
-    fetch("http://localhost:3000/posts")
+    //gets posts from the JSON file
+    fetch("http://localhost:3000/posts")    
         .then(response => response.json())
         .then(posts => {
             const postList = document.getElementById("post-list");
             postList.innerHTML = '';
             posts.forEach(post => {
                 const div = document.createElement("div");
-                div.classsName = "post-item";
+                div.ClassName = "post-item";
                 div.innerHTML = `
-                    <h3 data-id="${post.id} class="post-title">${post.title}</h3>
+                    <h3 data-id="${post.id}" class="post-title">${post.title}</h3>
                     <img src="${post.image}" alt="${post.title}" width="100" />
                     `
                 postList.appendChild(div);
@@ -23,7 +23,7 @@ function displayPosts() {
         });
 }
 
-
+//creates function for handling post click events
 function handlePostClick(event) {
     const id = event.target.dataset.id;
     fetch(`http://localhost:3000/posts/${id}`)
@@ -39,6 +39,7 @@ function handlePostClick(event) {
     });
 }
 
+//creates function for adding new posts
 function addNewPostListener() {
     const form = document.getElementById('new-post-form');
     form.addEventListener('submit', event => {
@@ -47,16 +48,19 @@ function addNewPostListener() {
         const author = form.author.value;
         const content = form.content.value;
         const image = form.image.value;
-        const postList = document.getElementById('post-list');
-        const div = document.createElement('div');
-        div.className = 'post-item';
-        div.innerHTML = `
-            <h3 class="post-title">${title}</h3>
-            <img src="${image}" alt="${title}" width="100" />
-        `;
 
-        postList.appendChild(div);
-        form.reset();
+
+        //Posts directly to JSON file
+        fetch("http://localhost:3000/posts", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ title, author, content, image })
+        })         
+            .then(() => {
+                displayPosts(); 
+                form.reset();
+            })
+            .catch(error => console.error("Error creating post:", error));
     });
 }
 
