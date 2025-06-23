@@ -12,7 +12,7 @@ A basic application to create and view blog posts. Perfect for learning CRUD ope
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/Simple-Blog-Post-Manager.git
+    git clone https://github.com/george-munene/Simple-Blog-Post-Manager
     ```
 2. **Navigate to the project directory:**
     ```bash
