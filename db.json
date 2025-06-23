@@ -1,19 +1,18 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "Is World War 3 Inevitable?",
-            "content": "With major global powers like the US, Russia, and China flexing their military might, many are asking if we are on the brink of another world war. Experts weigh in on the geopolitical tensions and the potential for conflict.",
-            "author" : "George Munene",
-            "image": "https://media.istockphoto.com/id/1416246700/photo/ww3-world-war-3.jpg?s=2048x2048&w=is&k=20&c=o6HvpsH4yRGL58JWD3EjbGOydKkgvKwEH7hvROZzZxI="
-        },
-
-        {
-            "id": 2,
-            "title": "The Rise of AI: A Double-Edged Sword",
-            "content": "Artificial Intelligence is transforming industries and daily life, but it also raises ethical concerns about privacy, job displacement, and decision-making. Experts discuss the benefits and risks of AI technology.",
-            "author" : "George Munene",
-            "image": "https://img.freepik.com/free-vector/wireframe-robot-ai-artificial-intelligence-robotic-hand-machine-learning-cyber-mind-domination-concept_127544-852.jpg?semt=ais_hybrid&w=740"
-        }
-    ]
+  "posts": [
+    {
+      "id": "1",
+      "title": "Is World War 3 Inevitable?",
+      "content": "With major global powers like the US, Russia, and China flexing their military might, many are asking if we are on the brink of another world war. Experts weigh in on the geopolitical tensions and the potential for conflict.",
+      "author": "George Munene",
+      "image": "https://media.istockphoto.com/id/1416246700/photo/ww3-world-war-3.jpg?s=2048x2048&w=is&k=20&c=o6HvpsH4yRGL58JWD3EjbGOydKkgvKwEH7hvROZzZxI="
+    },
+    {
+      "id": "2",
+      "title": "The Rise of AI: A Double-Edged Sword",
+      "content": "Artificial Intelligence is transforming industries and daily life, but it also raises ethical concerns about privacy, job displacement, and decision-making. Experts discuss the benefits and risks of AI technology.",
+      "author": "George Munene",
+      "image": "https://img.freepik.com/free-vector/wireframe-robot-ai-artificial-intelligence-robotic-hand-machine-learning-cyber-mind-domination-concept_127544-852.jpg?semt=ais_hybrid&w=740"
+    }
+  ]
 }
