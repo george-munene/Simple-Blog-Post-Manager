@@ -45,10 +45,8 @@ Run the following commands
 
 2. Click on the title to view the blog
 
-3. Add a new blog by entering details on the foem
+3. Add a new blog by entering details on the form
 
-
-Click on the T
 
 ## Future Works
 
